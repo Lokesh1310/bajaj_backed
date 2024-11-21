@@ -8,12 +8,6 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 // Middleware
-const corsOptions = {
-    origin: 'https://https://bajaj-backed.vercel.app',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    credentials: true,
-};
-app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 
