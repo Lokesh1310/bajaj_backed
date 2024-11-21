@@ -7,8 +7,7 @@ const { ResponseData } = require('./responseData');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-// Middleware
-app.use(cors());
+
 app.use(bodyParser.json());
 
 
