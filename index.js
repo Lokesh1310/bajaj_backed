@@ -13,19 +13,19 @@ app.use(bodyParser.json());
 
 
 
-app.get('/bfhl', (req, res) => {
-    try {
-        // Hardcoded response as specified
-        const response = {
-            operation_code: 1,
-        };
-        res.status(200).json(response);
-    } catch (error) {
-        // Exception handling
-        console.error('Error occurred:', error);
-        res.status(500).json({ error: 'Internal Server Error' });
-    }
-});
+// app.get('/bfhl', (req, res) => {
+//     try {
+//         // Hardcoded response as specified
+//         const response = {
+//             operation_code: 1,
+//         };
+//         res.status(200).json(response);
+//     } catch (error) {
+//         // Exception handling
+//         console.error('Error occurred:', error);
+//         res.status(500).json({ error: 'Internal Server Error' });
+//     }
+// });
 
 // POST endpoint to process requests
 app.post('/bfhl', (req, res) => {
